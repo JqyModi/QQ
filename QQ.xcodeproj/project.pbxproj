@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040164B7207A746400E6DF64 /* MDMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 040164B6207A746400E6DF64 /* MDMessage.m */; };
+		043A2EB6207B7B42003F431B /* MDMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 043A2EB5207B7B42003F431B /* MDMessageCell.m */; };
+		043D0CCA207A7DBA004727CA /* MDMessageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 043D0CC9207A7DBA004727CA /* MDMessageFrame.m */; };
+		04ECDA81207B8C800019F648 /* NSString+MDNSStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ECDA80207B8C800019F648 /* NSString+MDNSStringExt.m */; };
+		04ECDA84207B98BC0019F648 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ECDA83207B98BB0019F648 /* messages.plist */; };
 		04EE5EA4207A358D002F1175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE5EA3207A358D002F1175 /* AppDelegate.m */; };
 		04EE5EA7207A358D002F1175 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE5EA6207A358D002F1175 /* ViewController.m */; };
 		04EE5EAA207A358D002F1175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EE5EA8207A358D002F1175 /* Main.storyboard */; };
@@ -35,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040164B5207A746400E6DF64 /* MDMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMessage.h; sourceTree = "<group>"; };
+		040164B6207A746400E6DF64 /* MDMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMessage.m; sourceTree = "<group>"; };
+		043A2EB4207B7B42003F431B /* MDMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMessageCell.h; sourceTree = "<group>"; };
+		043A2EB5207B7B42003F431B /* MDMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMessageCell.m; sourceTree = "<group>"; };
+		043D0CC8207A7DBA004727CA /* MDMessageFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMessageFrame.h; sourceTree = "<group>"; };
+		043D0CC9207A7DBA004727CA /* MDMessageFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMessageFrame.m; sourceTree = "<group>"; };
+		04ECDA7F207B8C800019F648 /* NSString+MDNSStringExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MDNSStringExt.h"; sourceTree = "<group>"; };
+		04ECDA80207B8C800019F648 /* NSString+MDNSStringExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDNSStringExt.m"; sourceTree = "<group>"; };
+		04ECDA82207B8C940019F648 /* NSString+MDExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MDExt.h"; sourceTree = "<group>"; };
+		04ECDA83207B98BB0019F648 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
 		04EE5E9F207A358D002F1175 /* QQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EE5EA2207A358D002F1175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04EE5EA3207A358D002F1175 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +93,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040164B2207A73F000E6DF64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04EE5EAD207A358D002F1175 /* LaunchScreen.storyboard */,
+				04EE5EA8207A358D002F1175 /* Main.storyboard */,
+				043A2EB4207B7B42003F431B /* MDMessageCell.h */,
+				043A2EB5207B7B42003F431B /* MDMessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040164B3207A740D00E6DF64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04EE5EA5207A358D002F1175 /* ViewController.h */,
+				04EE5EA6207A358D002F1175 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		040164B4207A741900E6DF64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				040164B5207A746400E6DF64 /* MDMessage.h */,
+				040164B6207A746400E6DF64 /* MDMessage.m */,
+				043D0CC8207A7DBA004727CA /* MDMessageFrame.h */,
+				043D0CC9207A7DBA004727CA /* MDMessageFrame.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0426CD3D207A6B74000B05E7 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				04ECDA83207B98BB0019F648 /* messages.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0426CD3E207A6B84000B05E7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				040164B4207A741900E6DF64 /* Model */,
+				040164B3207A740D00E6DF64 /* Controller */,
+				040164B2207A73F000E6DF64 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0426CD3F207A6B8D000B05E7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04ECDA7F207B8C800019F648 /* NSString+MDNSStringExt.h */,
+				04ECDA80207B8C800019F648 /* NSString+MDNSStringExt.m */,
+				04ECDA82207B8C940019F648 /* NSString+MDExt.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0426CD40207A6B98000B05E7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04EE5EA2207A358D002F1175 /* AppDelegate.h */,
+				04EE5EA3207A358D002F1175 /* AppDelegate.m */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		04EE5E96207A358D002F1175 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +184,11 @@
 		04EE5EA1207A358D002F1175 /* QQ */ = {
 			isa = PBXGroup;
 			children = (
-				04EE5EA2207A358D002F1175 /* AppDelegate.h */,
-				04EE5EA3207A358D002F1175 /* AppDelegate.m */,
-				04EE5EA5207A358D002F1175 /* ViewController.h */,
-				04EE5EA6207A358D002F1175 /* ViewController.m */,
-				04EE5EA8207A358D002F1175 /* Main.storyboard */,
+				0426CD40207A6B98000B05E7 /* Support Files */,
+				0426CD3F207A6B8D000B05E7 /* Common */,
+				0426CD3E207A6B84000B05E7 /* Classes */,
+				0426CD3D207A6B74000B05E7 /* Others */,
 				04EE5EAB207A358D002F1175 /* Assets.xcassets */,
-				04EE5EAD207A358D002F1175 /* LaunchScreen.storyboard */,
 				04EE5EB0207A358D002F1175 /* Info.plist */,
 				04EE5EB1207A358D002F1175 /* main.m */,
 			);
@@ -194,6 +275,7 @@
 		04EE5E97207A358D002F1175 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MD;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Mac;
 				TargetAttributes = {
@@ -238,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ECDA84207B98BC0019F648 /* messages.plist in Resources */,
 				04EE5EAF207A358D002F1175 /* LaunchScreen.storyboard in Resources */,
 				04EE5EAC207A358D002F1175 /* Assets.xcassets in Resources */,
 				04EE5EAA207A358D002F1175 /* Main.storyboard in Resources */,
@@ -265,7 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040164B7207A746400E6DF64 /* MDMessage.m in Sources */,
 				04EE5EA7207A358D002F1175 /* ViewController.m in Sources */,
+				043A2EB6207B7B42003F431B /* MDMessageCell.m in Sources */,
+				04ECDA81207B8C800019F648 /* NSString+MDNSStringExt.m in Sources */,
+				043D0CCA207A7DBA004727CA /* MDMessageFrame.m in Sources */,
 				04EE5EB2207A358D002F1175 /* main.m in Sources */,
 				04EE5EA4207A358D002F1175 /* AppDelegate.m in Sources */,
 			);
